@@ -1,0 +1,112 @@
+/* Reset styles */
+body, h1, form, fieldset, legend, label, select, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main content container */
+.content-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Page title styling */
+.page-title h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Form styling */
+.survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Legend styling */
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Input and select styling */
+input[type="radio"], select {
+    margin-right: 10px;
+}
+
+/* Select dropdown styling */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Button styling */
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Scroll up button styling */
+.sp-scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: none;
+}
+
+.sp-scroll-up:hover {
+    background-color: #0056b3;
+}
+
+.sp-scroll-up span {
+    font-size: 18px;
+}

@@ -1,0 +1,157 @@
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 100px;
+}
+
+/* Header (menu) */
+header {
+  background-color: #fff; /* Couleur de fond initiale */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  position: fixed; /* Menu fixe */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333; /* Couleur initiale du texte */
+  font-size: 18px;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 5px; /* Coins arrondis */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Section de présentation principale */
+.presentation-container {
+  border: 1px solid #333;
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 90%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-container h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #333;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Section des photos */
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #ded3b9;
+}
+
+.photos img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère autour des images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photos img:hover {
+  transform: scale(1.05); /* Zoom au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre renforcée */
+}
+
+/* Section de présentation de l'A.M.I */
+.presentation-ami {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.presentation-ami h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #333;
+}
+
+.presentation-ami .presentation {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.presentation-ami .presentation h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ded3b9;
+}
+
+/* Listes */
+.presentation li {
+  margin-left: 3%;
+}
+
+.presentation div {
+  border: 2px solid #2b2b2b; /* Couleur de la bordure */
+  padding: 15px; /* Espace intérieur */
+  margin: 20px 0; /* Espacement autour du cadre */
+  border-radius: 8px; /* Coins arrondis */
+  background-color: #f9f9f9; /* Couleur de fond */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet esthétique */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation div:hover {
+  transform: scale(1.03); /* Léger zoom au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre renforcée */
+}
+
+/* Media Queries (responsive) */
+@media (max-width: 480px) {
+  header nav a {
+    font-size: 16px;
+  }
+
+  .presentation-container h2 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,90 @@
+/* Styles du header */
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  height: 70px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333; /* Couleur initiale du texte */
+  font-size: 18px;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 5px; /* Coins arrondis */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #ded3b9; /* Couleur de fond au survol */
+  color: #fff; /* Texte blanc au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+  transform: scale(1.1); /* Léger agrandissement */
+}
+
+header nav a.active:hover {
+  background-color: #ded3b9; /* Couleur de fond au survol */
+  color: #fff; /* Texte blanc au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+  transform: scale(1.1); /* Léger agrandissement */
+}
+
+header nav a.active {
+  color: #ded3b9;
+}
+
+header .mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;  /* Cache le menu principal */
+    flex-direction: column;
+    background-color: #f0f0f0; /* Fond gris opaque */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;  /* Moitié de la largeur du header */
+    z-index: 10;
+    padding-right: 10px;
+  }
+
+  header .mobile-menu-toggle {
+    display: block;
+  }
+
+  header nav.open {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* Logic pour fermer le menu si on clique à l'extérieur */
+  body.nav-open header nav {
+    display: none;
+  }
+
+  body.nav-open header .mobile-menu-toggle {
+    display: block;
+  }
+}
+
+header nav.open a {
+  display: block;
+  margin: 5px 0;
+}

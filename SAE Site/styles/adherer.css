@@ -1,0 +1,276 @@
+/* Structure générale */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Section principale */
+main {
+  padding: 20px;
+}
+
+.presentation-container {
+  border: 1px solid #333;
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 90%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-container h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Étapes d'adhésion */
+.steps {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.step {
+  flex: 1;
+  padding: 10px 20px;
+  background: #f4f4f4;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.step.active {
+  background: #d2c29d;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Options d'adhésion */
+.adhesion-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.option {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Pour positionner l'input radio */
+}
+
+.option input[type="radio"] {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: scale(1.2); /* Agrandit légèrement le bouton radio */
+}
+
+.option label {
+  display: block;
+  padding-left: 30px; /* Espace pour éviter de superposer le bouton radio */
+  text-align: left;
+}
+
+/* Options d'adhésion */
+.adhesion-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.option {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.option input[type="radio"] {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: scale(1.2); /* Agrandit légèrement le bouton radio */
+  cursor: pointer;
+}
+
+.option:hover {
+  transform: scale(1.05); /* Légère animation pour agrandir le bloc */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+.option input[type="radio"]:checked + .content {
+  border: 2px solid #d2c29d; /* Couleur dorée pour la bordure sélectionnée */
+  border-radius: 10px;
+  background-color: #fef6e5; /* Fond léger doré */
+  box-shadow: 0 4px 15px rgba(210, 194, 157, 0.5); /* Ombre accentuée */
+}
+
+.option label {
+  display: block;
+  padding-left: 30px; /* Espace pour éviter de superposer le bouton radio */
+  text-align: left;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.option h3 {
+  margin: 10px 0;
+}
+
+.option p {
+  font-size: 14px;
+  color: #666;
+}
+
+.free-support input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Total et bouton */
+.total {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.total span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Effet hover pour les options */
+.option:hover {
+  transform: scale(1.05); /* Légère animation pour agrandir le bloc */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.formulaire {
+  display: none;
+}
+.formulaire.active {
+  display: block;
+}
+.steps .step.active {
+  background: #d2c29d;
+  color: white;
+}
+
+.btn button {
+  margin: 4px;
+}
+.formulaire2 label, .formulaire3 label{
+  display: flex;
+  margin-bottom: 8px; /* Espacement en bas */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style des champs de saisie pour les groupes de formulaire */
+.form-group {
+  flex: 1; /* Prendre toute la largeur disponible */
+  margin-right: 10px; /* Espacement à droite pour le champ prénom */
+}
+
+/* Style des boutons */
+.nav {
+  background-color: #ded3b9; /* Bleu vif */
+  color: white; /* Texte en blanc */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  cursor: pointer; /* Curseur pointeur pour indiquer un clic */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.nav:hover {
+  background-color: #ded3b9; /* Couleur plus sombre au survol */
+  transform: scale(1.05); /* Légère augmentation de taille */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Ombre renforcée */
+}
+
+
+/* Style de la boîte du formulaire */
+.form-container {
+  max-width: 1000px; /* Largeur maximale de la boîte */
+  margin: 0 auto; /* Centrer la boîte */
+  padding: 20px; /* Espacement interne */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+/* Style des groupes de formulaire */
+.form-group {
+  margin-bottom: 15px; /* Espacement en bas */
+}
+
+/* Style pour le groupe de nom et prénom */
+.name-group {
+  display: flex; /* Utiliser Flexbox */
+}
+
+/* Style des champs de saisie */
+input{
+  width: 80%; /* Prendre toute la largeur */
+  padding: 10px; /* Espacement interne */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 4px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police */
+}
+
+.suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ddd;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1000;
+  width: 50%;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style pour les champs avec erreur */
+input.error, select.error, textarea.error {
+  border-color: red;  /* Bordure rouge pour les champs invalides */
+  background-color: #f8d7da;  /* Fond rose pâle */
+}
+
+input.error:focus, select.error:focus, textarea.error:focus {
+  border-color: darkred;  /* Bordure plus sombre lors du focus */
+}
+
+

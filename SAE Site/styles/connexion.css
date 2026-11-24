@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.connexion-form {
+  width: 50vw;
+  padding: 20px;
+  background-color: #eef0f3;
+  border-radius: 8px;
+}
+
+.connexion-form h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #d2c29d;
+  margin-bottom: 20px;
+}
+
+.connexion-form form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.connexion-form form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.connexion-form form input {
+  width: calc(100% - 50px); /* Espace pour le bouton */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.connexion-form form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #d2c29d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.connexion-form form button:hover {
+  background-color: #b8a179;
+}
+
+.connexion-form form #togglePassword {
+  display: block; /* Ajout pour centrer le bouton */
+  margin-left: 10px; /* Légère marge gauche */
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #d2c29d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.connexion-form form #togglePassword:hover {
+  background-color: #b8a179;
+}

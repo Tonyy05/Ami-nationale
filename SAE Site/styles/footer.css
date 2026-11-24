@@ -1,0 +1,52 @@
+/* Styles du footer */
+footer {
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+/*Titres*/
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*Textes cliquables*/
+footer a {
+    color: #d2c29d;
+    text-decoration: none;
+}
+
+/*Souris sur le texte*/
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*Footer en ligne*/
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*Centre le footer*/
+.footer-content div {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+/*Style Tout droits reservées*/
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/*Paragraphe du footer*/
+footer p {
+    margin: 5px 0;
+    font-size: 12px;
+}
